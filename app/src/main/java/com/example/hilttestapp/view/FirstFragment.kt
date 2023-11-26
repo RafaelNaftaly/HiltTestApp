@@ -97,6 +97,7 @@ class FirstFragment : Fragment() {
         viewModel.heroListLiveData.observe(requireActivity(), Observer {
 
             heroRecyclerViewDataChanged.dataSetChanged(it)
+            Toast.makeText(requireActivity(),"Test",Toast.LENGTH_LONG).show()
 
         })
 
